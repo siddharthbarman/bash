@@ -15,7 +15,7 @@ UP                Previous command
 DOWN              Next command
 TAB               File system object name completion
 ```
-# Bash commands
+# Useful bash commands
 ```bash
 apropos "<string>"              Lists command which have anything to do with the string
 echo "text"                     Print text on screen and append a newline at the end
@@ -78,7 +78,20 @@ command > <file>                Redirect output of command to a file
 echo -n "hello" > greet.txt     Write 'hello' into file greet.txt overwriting all content
 echo ", World" >> greet.txt     Append ', World' to file greet.txt
 which <program-name>            Find location where program exists e.g. which bash
-
+cat /etc/os-release				Print OS information (more detailed)
+cat /etc/lsb-release			Print distro information
+uname -a						Print kernel version information
+free -h							Print memory information using human readable values
+cat /proc/cpuinfo				Print CPU information
+df -h							Print disk space
+sudo du / -hd1					Print space occupied by first level directories under root
+sudo lshw						Print hardware information
+ip address						Print network adapters and IP addresses, shortform: ip a
+apt search <name>				Search for package by name & description
+apt show <package>				Print package information
+sudo apt update					Update apt package information
+sudo apt upgrade				Upgrade installed packages
+sudo apt install <package>		Install a package
 ```
 
 # File permissions
