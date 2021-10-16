@@ -33,7 +33,7 @@ mkdir -p f1/f2/f3               Create all the folders including parents, child
 rm -rf <folder path>            Delete the folder and everything it in
 find <path> -name <pattern>     Look for files & folders with name matching the pattern
 sudo useradd <user>             Create a user without a home directory
-sudo useradd -m <user> -c <FN> 	Create a user with a home directory (-m) and fullname 
+sudo useradd -m <user> -c <FN>  Create a user with a home directory (-m) and fullname 
 sudo passwd <user>              Sets a password for the specified user
 su <user>                       Switch user to specified user
 sudo <command>                  Run the command as root e.g. sudo ls /root
@@ -78,20 +78,20 @@ command > <file>                Redirect output of command to a file
 echo -n "hello" > greet.txt     Write 'hello' into file greet.txt overwriting all content
 echo ", World" >> greet.txt     Append ', World' to file greet.txt
 which <program-name>            Find location where program exists e.g. which bash
-cat /etc/os-release				Print OS information (more detailed)
-cat /etc/lsb-release			Print distro information
-uname -a						Print kernel version information
-free -h							Print memory information using human readable values
-cat /proc/cpuinfo				Print CPU information
-df -h							Print disk space
-sudo du / -hd1					Print space occupied by first level directories under root
-sudo lshw						Print hardware information
-ip address						Print network adapters and IP addresses, shortform: ip a
-apt search <name>				Search for package by name & description
-apt show <package>				Print package information
-sudo apt update					Update apt package information
-sudo apt upgrade				Upgrade installed packages
-sudo apt install <package>		Install a package
+cat /etc/os-release             Print OS information (more detailed)
+cat /etc/lsb-release            Print Linux distro information
+uname -a                        Print kernel version information
+free -h                         Print memory information using human readable values
+cat /proc/cpuinfo               Print CPU information
+df -h                           Print disk space
+sudo du / -hd1                  Print space occupied by first level directories under root
+sudo lshw                       Print hardware information
+ip address                      Print network adapters and IP addresses, shortform: ip a
+apt search <name>               Search for package by name & description
+apt show <package>              Print package information
+sudo apt update                 Update apt package information
+sudo apt upgrade                Upgrade installed packages
+sudo apt install <package>      Install a package
 ```
 
 # File permissions
